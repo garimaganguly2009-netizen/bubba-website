@@ -64,7 +64,7 @@ button {
 <script>
 function unlock() {
     let pass = prompt("Enter password 💌");
-    if(pass === "bubba") {
+    if(pass.toLowerCase() === "bubba") {
         document.getElementById("gallery").style.display = "grid";
     } else {
         alert("Wrong password 🥺");
