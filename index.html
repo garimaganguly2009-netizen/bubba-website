@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bubba 💗</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #ffe6f0;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 40px;
+    font-size: 40px;
+    color: #ff4d94;
+}
+
+.subtitle {
+    color: #cc0066;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #ff99cc;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.gallery {
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<h1>Bubba 💗</h1>
+<p class="subtitle">My Dickyboyy • May Memories 🌸</p>
+
+<button onclick="unlock()">Open Our Gallery</button>
+
+<div class="gallery" id="gallery">
+    <!-- Add your images below -->
+</div>
+
+<script>
+function unlock() {
+    let pass = prompt("Enter password 💌");
+    if(pass === "bubba") {
+        document.getElementById("gallery").style.display = "grid";
+    } else {
+        alert("Wrong password 🥺");
+    }
+}
+</script>
+
+</body>
+</html>
